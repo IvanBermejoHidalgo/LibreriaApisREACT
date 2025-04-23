@@ -49,7 +49,7 @@ function App() {
       if (nominatimResponse.data.length > 0) {
         const { lat, lon } = nominatimResponse.data[0];
         
-        // Consulta optimizada con límite de 50 resultados
+        // Consulta con límite de 50 resultados
         const overpassQuery = `
           [out:json];
           (
@@ -86,7 +86,7 @@ function App() {
     }
   };
 
-  // Estilos (igual que antes)
+  // Estilos
   const provinceStyle = {
     fillColor: "#4CAF50",
     weight: 1,
